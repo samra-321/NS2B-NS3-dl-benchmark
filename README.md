@@ -8,9 +8,9 @@ This project extends the ML classification pipeline from my MS thesis (ChEMBL-de
 
 ## Pipeline
 
-1. `src/featurize.py` — Converts SMILES to Morgan fingerprints (radius=2, 2048 bits)
-2. `src/model.py` — PyTorch MLP architecture (2048 → 256 → 64 → 1)
-3. `src/train.py` — Trains the MLP and classical RF/SVM baselines, reports ROC-AUC for all three
+1. `src/featurize.py` Converts SMILES to Morgan fingerprints (radius=2, 2048 bits)
+2. `src/model.py` PyTorch MLP architecture (2048 → 256 → 64 → 1)
+3. `src/train.py' Trains the MLP and classical RF/SVM baselines, reports ROC-AUC for all three
 
 ## Setup
 
@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```bash
-python src/featurize.py   # generate fingerprints from data/ns2b_ns3_compounds.csv
+python src/featurize.py   # generate fingerprints from data/NS2B_NS3_compounds.csv
 python src/train.py       # train MLP + baselines, print ROC-AUC comparison
 ```
 
@@ -35,8 +35,9 @@ python src/train.py       # train MLP + baselines, print ROC-AUC comparison
 
 ## Discussion
 
-*To be added after running experiments — comparing why classical ML vs. deep learning performs differently on this dataset size and feature representation.*
+*To be added after running experiments comparing why classical ML vs. deep learning performs differently on this dataset size and feature representation.*
 
 ## Author
 
-Samra — MS Bioinformatics, COMSATS University Islamabad
+Samra khaliq
+
